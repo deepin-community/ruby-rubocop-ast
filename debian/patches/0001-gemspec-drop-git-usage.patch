@@ -1,0 +1,22 @@
+From: Antonio Terceiro <asa@terceiro.xyz>
+Date: Thu, 16 Jul 2020 11:50:06 -0300
+Subject: gemspec: drop git usage
+
+---
+ rubocop-ast.gemspec | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+diff --git a/rubocop-ast.gemspec b/rubocop-ast.gemspec
+index 8f683c5..d42caca 100644
+--- a/rubocop-ast.gemspec
++++ b/rubocop-ast.gemspec
+@@ -14,8 +14,7 @@ Gem::Specification.new do |s|
+   DESCRIPTION
+ 
+   s.email = 'rubocop@googlegroups.com'
+-  s.files = `git ls-files lib LICENSE.txt README.md`
+-            .split($RS)
++  s.files = Dir['lib/**/*.rb']
+   s.extra_rdoc_files = ['LICENSE.txt', 'README.md']
+   s.homepage = 'https://github.com/rubocop-hq/rubocop-ast'
+   s.licenses = ['MIT']

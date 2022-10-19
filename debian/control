@@ -1,0 +1,29 @@
+Source: ruby-rubocop-ast
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Antonio Terceiro <terceiro@debian.org>,
+           Utkarsh Gupta <utkarsh@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               gem2deb (>= 1),
+               rake,
+               ruby-rspec,
+               ruby-whitequark-parser (>= 2.7.1.5)
+Standards-Version: 4.6.0
+Vcs-Git: https://salsa.debian.org/ruby-team/ruby-rubocop-ast.git
+Vcs-Browser: https://salsa.debian.org/ruby-team/ruby-rubocop-ast
+Homepage: https://github.com/rubocop/rubocop-ast
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+Rules-Requires-Root: no
+
+Package: ruby-rubocop-ast
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ${misc:Depends},
+         ${ruby:Depends},
+         ${shlibs:Depends}
+Description: RuboCop tools to deal with Ruby code AST
+ This package provides the RuboCop::AST::Node and RuboCop::AST::NodePattern
+ classes to deal with the Ruby AST. It was extracted from RuboCop and can be
+ used independently of it.

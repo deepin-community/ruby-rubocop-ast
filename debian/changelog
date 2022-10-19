@@ -1,0 +1,42 @@
+ruby-rubocop-ast (0.6.0-1) UNRELEASED; urgency=medium
+
+  * update
+
+ -- Debian Ruby Team <pkg-ruby-extras-maintainers@lists.alioth.debian.org>  Fri, 22 Jul 2022 16:16:43 +0800
+
+ruby-rubocop-ast (0.6.0-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * d/control (Standards-Version): Bump to 4.6.0.
+    (Build-Depends): Raise ruby-whitequark-parser version accordingly.
+    (Homepage): Update URL.
+  * d/copyright: Add Upstream-Contact field.
+    (Source): Update URL.
+    (Copyright): Add team.
+  * d/ruby-rubocop-ast.docs: Add and install README file.
+  * d/rules: Install upstream changelog.
+  * d/watch: Update file.
+  * d/upstream/metadata: Update all URLs.
+
+ -- Daniel Leidert <dleidert@debian.org>  Wed, 08 Dec 2021 12:03:52 +0100
+
+ruby-rubocop-ast (0.3.0+dfsg-1) unstable; urgency=medium
+
+  * New upstream version 0.3.0+dfsg
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Wed, 19 Aug 2020 11:24:28 +0530
+
+ruby-rubocop-ast (0.1.0-2) unstable; urgency=medium
+
+  * Source-only upload.
+  * Add myself as an uploader.
+
+ -- Utkarsh Gupta <utkarsh@debian.org>  Fri, 24 Jul 2020 23:18:17 +0530
+
+ruby-rubocop-ast (0.1.0-1) unstable; urgency=medium
+
+  * Initial release
+  * Add patch to drop git usage in the gemspec
+
+ -- Antonio Terceiro <terceiro@debian.org>  Thu, 16 Jul 2020 11:50:27 -0300
